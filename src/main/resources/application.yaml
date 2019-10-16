@@ -1,0 +1,11 @@
+server: 
+ port: 8980
+spring:
+ application:
+  name: config_serv
+ cloud:
+  config:
+   server:
+    git:
+     uri: https://github.com/Micha12cloud/{application}
+     searchPaths: ala, cola, developer, tola
